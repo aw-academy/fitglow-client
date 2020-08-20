@@ -17,7 +17,9 @@ public class TipFromCommitMain {
 	public static void main(String[] args) {
 		
 		TipMapper tipMapper = new TipMapper();
-		BigDecimal bill = new BigDecimal("250");
+		
+		BigDecimal bill = new BigDecimal("<BILL_VALUE>");
+		
 		BigDecimal tip = tipMapper.fetchTip(TipCategory.KITCHEN, bill);
 		
 		System.out.println();
