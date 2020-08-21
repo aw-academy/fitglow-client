@@ -12,7 +12,7 @@ public class KeyToTipTest {
 	@Test
 	public void fetchValue() {
 		Tresor tresor = new Tresor();
-		String tip = tresor.decrypt("<SECRET GOES HERE>");
+		String tip = tresor.decrypt("d28fd8906b7c30ae9560b879840cb6f2");
 		assertNotNull("Wrong secret key given", tip);
 		
 		System.out.println();
@@ -21,5 +21,4 @@ public class KeyToTipTest {
 		
 		assertTrue(true);
 	}
-
 }
