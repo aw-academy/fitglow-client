@@ -13,10 +13,10 @@ public class SecretToTipTest {
 	@Test
 	public void digest() {
 		Tresor tresor = new Tresor();
-		String bill = tresor.bill("<.secret.key>");
+		String bill = tresor.bill("a2f3899661f991dbd8dfa6e36e53ed43");
 		
 		TipMapper tipMapper = new TipMapper();
-		TipCategory tipCategory = TipCategory.valueOf("<position-category.txt>");
+		TipCategory tipCategory = TipCategory.valueOf("BOUNCER");
 		BigDecimal tip = tipMapper.fetchTip(tipCategory, new BigDecimal(bill));
 		
 		System.out.println();
